@@ -10,7 +10,13 @@
 import string
 import random
 
-print()
+def clearspace():
+   clearer = 0
+   while clearer <= 50:
+      print()
+      clearer = clearer + 1
+
+clearspace()
 print("=============================<{ pasworder }>=============================")
 print()
 
