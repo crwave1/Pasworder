@@ -56,9 +56,12 @@ elif input("Would you like numbers in your password? (y/n) ") == "y":
    if input("Would you like an extreme password, disregarding previous choices? (y/n) ") == "y":
       chlist = string.digits + string.ascii_letters + string.punctuation
 
-pwlength = int(input("Please enter desired password length: "))
-
-# might add try block for 'int(input())' lines
+try:
+   pwlength = int(input("Please enter desired password length: "))
+except:
+   print("Not a valid number. Setting password length to default 10.")
+   pwlength = 10
+   # Will keep asking for a valid number later
 
 print()
 
